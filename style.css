@@ -1,0 +1,320 @@
+html {
+  background-image: url(https://i.imgur.com/PQlxCOb.png);
+}
+
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  margin-top: 150px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+}
+
+.header-container {
+  max-width: 650px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-family: 'Roboto condensed', sans-serif;
+  color: #863FC3;
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+label {
+  font-family: 'Roboto condensed', sans-serif;
+  font-size: 1.25em;
+}
+
+
+#tweet-string-label {
+  color: #863FC3;
+}
+
+#og-tweet {
+  color: #3D48C4;
+}
+
+.js-query {
+  border: 1px solid #3D48C4;
+  width: 100%;
+}
+
+.tweet-string {
+  border: 1px solid #863FC3;
+}
+
+
+.js-query, .tweet-string {
+  display: block;
+  width: 300px;
+  height: 90px;
+  padding: 5px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+
+/*buttons*/
+
+.button-container {
+  margin-right: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.start-button-container {
+  text-align: center;
+}
+
+.startButton, .js-next-synonym-button {
+  width: 250px;
+  padding: 10px 20px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  color: white;
+  background-color: #863FC3;
+  border-bottom: 3px solid lightgray;
+  border-left: none;
+  border-top: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.js-keep-original-button {
+  width: 250px;
+  padding: 10px 20px 10px;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  color: white;
+  background-color: #3D48C4;
+  border-bottom: 3px solid lightgray;
+  border-left: none;
+  border-top: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.js-submit-button {
+  width: 200px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: white;
+  background-color: #3D48C4;
+  border-bottom: 3px solid lightgray;
+  border-left: none;
+  border-top: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.final-buttons-wrapper {
+  text-align: center;
+}
+
+.twitter-share-button {
+  display: block;
+  margin: 0px auto 20px;
+}
+.js-start-over-button {
+  display: inline;
+  width: 200px;
+  padding: 5px 10px 5px;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  color: white;
+  background-color: #863FC3;
+  border-bottom: 3px solid lightgray;
+  border-left: none;
+  border-top: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* inputs */
+/* The container */
+.js-result-label {
+  font-family: 'Roboto condensed', sans-serif;
+  font-size: 1.25em;
+  display: block;
+  position: relative;
+  width: 300px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #1D2BA5;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+/* Hide the browser's default radio button */
+.js-result-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-button {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.js-result-label:hover input ~ .radio-button {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.js-result-label input:checked ~ .radio-button {
+  background-color: #1D2BA5;
+}
+
+.js-result-label:hover {
+  border-bottom: 2px solid lightgray;
+}
+
+.checked {
+  color: white;
+  background-color: #E634B0;
+  border-bottom: 2px solid lightgray;
+}
+
+
+/*search results*/
+.row {
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 2px solid #D4D4D4;
+  background-color: white;
+  margin: 20px 0px 0px 0px;
+  padding: 5px;
+}
+
+.col-3 {
+  padding: 0px;
+  cursor: pointer;
+}
+
+.js-word-type-container {
+  background-color: white;
+  border-top: none;
+  border-bottom: none;
+  //border-left: 1px solid lightgray;
+  //border-right: 1px solid lightgray;
+}
+
+h3 {
+  font-family: 'Roboto condensed', sans-serif;
+  color:	#AD1A9E;
+  font-size: 20px;
+  margin: 0px auto;
+}
+
+.js-new-synonym-results {
+  margin-top: 40px;
+}
+
+.js-word-type-container {
+  padding: 10px;
+  margin: 1px;
+  font-family: 'Roboto condensed', sans-serif;
+  color:	#AD1A9E;
+  font-size: 1.75em;
+  //margin: 0px auto;
+  text-align: center;
+}
+
+.js-word-type-container:hover {
+  color: #E634B0;
+  text-decoration: underline;
+}
+
+.js-word-type-container:enabled {
+  color: #E634B0;
+}
+
+.underline {
+  font-family: 'Roboto condensed', sans-serif;
+  text-decoration: underline;
+}
+
+.active {
+  color: #E634B0;
+}
+
+.js-synonym-results {
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.js-title {
+  text-align: center;
+}
+
+.js-title:hover {
+  color: #E634B0;
+  text-decoration: underline;
+}
+
+.js-title:enabled {
+  color: #E634B0;
+}
+
+
+
+
+/*media queries*/
+@media only screen and (max-width: 639px) {
+  .startButton {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    }
+  
+  header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .js-word-type-container {
+    width: 130px;
+    margin: 0px;
+  }
+}
